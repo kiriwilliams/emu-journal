@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import Calendar from "../Calendar/Calendar";
+// import Calendar from "../Calendar/Calendar";
 import MiniHistory from "../MiniHistory/MiniHistory";
 import "./Sidebar.css"
 import { HashLink as Link } from 'react-router-hash-link';
@@ -36,7 +36,7 @@ class Sidebar extends Component {
                 </div> */}
                 <div className="row mb-1">
                     <div className="col-12 px-0">
-                        <Calendar />
+                        {/* <Calendar /> */}
                     </div>
                 </div>
                 <div className="row mb-1">

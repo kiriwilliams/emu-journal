@@ -3,6 +3,8 @@ const path = require('path');
 const cluster = require('cluster');
 const numCPUs = require('os').cpus().length;
 const routes = require("./routes");
+require('dotenv').config();
+const mongoose = require("mongoose");
 
 const isDev = process.env.NODE_ENV !== 'production';
 const PORT = process.env.PORT || 5000;
@@ -38,6 +40,15 @@ if (!isDev && cluster.isMaster) {
   app.get('*', function(request, response) {
     response.sendFile(path.resolve(__dirname, '../react-ui/build', 'index.html'));
   });
+
+  // Connect to the Mongo DB
+mongoose.connect(
+  process.env.MONGODB_URI,
+  {
+    useCreateIndex: true,
+    useNewUrlParser: true
+  }
+);
 
   app.listen(PORT, function () {
     console.error(`Node ${isDev ? 'dev server' : 'cluster worker '+process.pid}: listening on port ${PORT}`);
