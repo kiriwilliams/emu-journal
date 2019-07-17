@@ -62,7 +62,7 @@ class Login extends Component {
   // }
 
   RegisterNewUser = (userData) => {
-    console.log("in Register");
+    // console.log(userData);
     API.register(userData).then(res => {
       const data = res.data;
       console.log(data);

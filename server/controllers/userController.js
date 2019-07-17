@@ -5,6 +5,7 @@ const jwt = require('jsonwebtoken');
 
 module.exports = {
     create: function (req, res) {
+        console.log(req.body);
         db.User
             .findOne({ username: req.body.username })
             .then(data => data

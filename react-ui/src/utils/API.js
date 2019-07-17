@@ -37,6 +37,7 @@ export default {
 
 
     register: function(userData){
+        console.log("In API.js \n" + JSON.stringify(userData));
         return axios.post("/api/users/register", userData)
     },
 
