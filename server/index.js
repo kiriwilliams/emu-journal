@@ -34,13 +34,8 @@ if (!isDev && cluster.isMaster) {
   app.use(bodyParser.json()); // for parsing application/json
   app.use(bodyParser.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
+  //routing for API calls
   app.use(routes);
-  
-  // Answer API requests.
-  // app.get('/api', function (req, res) {
-  //   res.set('Content-Type', 'application/json');
-  //   res.send('{"message":"Hello from the custom server!"}');
-  // });
 
   // All remaining requests return the React app, so it can handle routing.
   app.get('*', function (request, response) {
