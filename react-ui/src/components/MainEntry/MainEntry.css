@@ -1,0 +1,109 @@
+#theme{
+    background-image: url("../../images/sakura.png");
+    height: 100%;
+}
+    /* .side-bar{
+   border: 2px solid white
+    
+} */
+.main-content{
+    border: 2px solid white
+
+}
+.row-width{
+    width: 95%;
+    margin: 0 auto;
+}
+.font{
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Rancho', cursive;
+}
+.sideBarFont{
+    font-size: 16px;
+    text-align: center;
+    margin: 0;
+}
+
+.entryBackground {
+    background-color: #fff;
+    padding: 0 20px;
+}
+
+.noteContainer{
+    height: 610px;
+}
+
+textarea, input {
+    overflow-y: scroll;
+    padding:10px;
+      font-style: normal;
+      font-weight: normal;
+      text-decoration: inherit;
+      
+  }
+
+  .notes {
+    width: 100%;
+    height: 410px;
+    background-attachment: local;
+    background-image:
+        linear-gradient(to right, white 10px, transparent 10px),
+        linear-gradient(to left, white 10px, transparent 10px),
+        repeating-linear-gradient(white, white 30px, #ccc 30px, #ccc 31px, white 31px);
+    line-height: 31px;
+    padding: 8px 10px;
+}
+
+.con-past{
+    padding-bottom: 50px;
+}
+
+#clickAbleIcon{
+    cursor: pointer;
+}
+
+.icon-size{
+    font-size: 25px;
+}
+
+.choose_file{
+    position:relative;
+    display:inline-block;    
+	border-radius:8px;
+    border:#ebebeb solid 1px;
+    padding: 4px 6px 4px 8px;
+    font: normal 14px Myriad Pro, Verdana, Geneva, sans-serif;
+    color: #7f7f7f;
+    margin-top: 2px;
+	background:white
+}
+.choose_file input[type="file"]{
+    -webkit-appearance:none; 
+    position:absolute;
+    top:0; left:0;
+    opacity:0; 
+}
+.upload-image{
+    padding: 0;
+    width: 90%;
+    height: 30px;
+}
+
+.emoji-picker .search-bar input{
+    height: 40px;
+}
+.emoji-picker{
+    border: 1px solid black;
+    
+}
+/* .close{
+    right: -115px;
+   
+} */
+
+
+.pickr{
+    margin-top: -40px;
+    opacity: 0;
+}

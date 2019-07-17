@@ -1,0 +1,18 @@
+html {
+    position: relative;
+    min-height: 100%;
+  }
+
+.footer{
+    bottom: 0;
+    width: 100%;
+    /* Set the fixed height of the footer here */
+    height: 50px;
+    /* background-color: white; */
+   /* border-top: 1px solid black; */
+    text-align: center;
+    
+ }
+ .footerP{
+   line-height: 3;
+ }

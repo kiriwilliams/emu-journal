@@ -1,0 +1,41 @@
+/* html, body {
+    margin: 0; padding: 0;
+  } */
+.hero-bkg-animated {
+    background: gray url(http://yairwalden.com/wp-content/uploads/2018/09/Pattern_Neto.gif) repeat 0 0;
+    /* background-repeat: no-repeat;
+    background-size: cover; */
+    width: 100%;
+    margin: 0;
+    text-align: center;
+    height: 400px;
+    padding-top: 70px;
+    box-sizing: border-box;
+    -webkit-animation: slide 30s linear infinite;
+    
+  }
+  
+ .signUp{
+   /* position: absolute; */
+   background-image: url("https://cdn.pixabay.com/photo/2017/08/29/05/01/desktop-2692158_640.png");
+   background-size: 350px 285px;
+   width:350px;
+   height: 285px;
+   margin: 0 auto;
+   position: relative;
+ }
+ .sign-up{
+   position: absolute;
+   top: 49%;
+   left: 40%;
+
+ }
+  
+  @keyframes slide {
+      from { background-position: 0 0; }
+      to { background-position: 400px 0; }
+  }
+
+
+
+ 
