@@ -40,7 +40,7 @@ class Form extends Component {
 
         if (this.state.Username && this.state.Password) {
             this.props.submitForm({
-                username: this.state.Username,
+                username: this.state.Username.toLowerCase(),
                 password: this.state.Password,
                 email: this.state.Email
             });
