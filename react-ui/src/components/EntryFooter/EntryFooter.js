@@ -10,7 +10,7 @@ class EntryFooter extends Component {
     }
 
     componentDidMount() {
-        this.setState({editing: this.props.editing});
+        this.setState({ editing: this.props.editing });
         // Simple example, see optional options for more configuration.
         const pickr = Pickr.create({
             el: '.color-picker',
@@ -60,7 +60,7 @@ class EntryFooter extends Component {
                 console.log('save', color);
                 this.props.handleColor(color);
                 // this.updateTextColor(color);
-            });   
+            });
     }
 
     saveEntry = (editingState) => {
@@ -90,7 +90,7 @@ class EntryFooter extends Component {
                     return { display: "block" }
                 case "edit":
                     return { display: "none" }
-                default: 
+                default:
                     return;
             }
         }
@@ -120,20 +120,28 @@ class EntryFooter extends Component {
                         <div className="input-group-append btn btn-secondary input-group-text" onClick={this.addTag}> Add Tag</div>
 
                     </div>
-                </div> 
-                
+                </div>
+
                 {/* COLOR PICKER */}
-                <div className="col-2 col-sm-2 text-right"  style={this.setVisibility("editing")}>
-                    <button  type="button" className="btn btn-small btn-secondary choose_file mr-2 " href="#">
+                <div className="col-2 col-sm-2 text-right" style={this.setVisibility("editing")}>
+                    {/* <button  type="button" className="btn btn-small btn-secondary choose_file mr-2 " href="#">
                         <i className="fas fa-paint-brush icon-size "></i>
                         </button>
-                    <button type="button" className="btn btn-small btn-secondary choose_file mr-2 color-picker" href="#">
-                    </button>
+                    <button type="button" className="btn btn-small btn-secondary choose_file mr-2 color-picker" href="#">aaaaa
+                    </button> */}
+                    <div className="col-6">
+                        <div className="btn btn-small btn-secondary choose_file mr-2">
+                            <i className="fas fa-paint-brush icon-size"></i>
+                        </div>
+                        <div className="color-picker">
+                            <i className="fas fa-paint-brush"></i>
+                        </div>
+                    </div>
                 </div>
 
                 <div className="col-10 col-sm-3 text-right" style={this.setVisibility("editing")}>
-                    
-             
+
+
                     {/* SAVE BUTTON */}
                     <div className="btn btn-small btn-secondary choose_file" onClick={event => this.saveEntry(false)} >
                         <i className="far fa-save icon-size "></i>
@@ -144,12 +152,12 @@ class EntryFooter extends Component {
                 {/* EDIT BUTTON */}
                 <div className="col-12 text-right pb-3 " style={this.setVisibility("edit")}>
                     <div className="btn btn-small btn-secondary choose_file icon-size" onClick={event => this.editMode(true)}><i className="fas fa-user-edit icon-size"></i></div>
-                 {/* DELETE BUTTON */}
+                    {/* DELETE BUTTON */}
                     <div className="btn btn-small btn-secondary choose_file icon-size ml-2" onClick={() => this.props.delete()}><i className="far fa-trash-alt icon-size"></i></div>
-            
+
                 </div>
-               
-                
+
+
             </div>
         )
     }
