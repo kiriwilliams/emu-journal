@@ -43,21 +43,6 @@ class Login extends Component {
     }
   }
 
-  // RegisterNewUser = (userData) => {
-  //   API.register(userData).then(res => {
-  //     const data = res.data;
-  //     if (data === "username taken") {
-  //       alert("username taken");
-  //     }
-  //     else {
-  //       this.LoginUser(userData);
-  //       // window.sessionStorage.setItem("auth", true);
-  //       // this.setState({ userID: res.data._id, redirect: true })
-
-  //     }
-  //   });
-  // }
-
   RegisterNewUser = (userData) => {
     // console.log(userData);
     API.register(userData).then(res => {
