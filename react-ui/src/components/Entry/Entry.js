@@ -50,7 +50,7 @@ class Entry extends Component {
     handleClick = () => {
         console.log("handle Click");
         // console.log(this.state.noteID);
-        if (this.state.noteID && this.state.noteID!= "newEntry") {
+        if (this.state.noteID && this.state.noteID!== "newEntry") {
             API.updateEntry({
                 noteID: this.state.noteID,
                 content: this.state.text,

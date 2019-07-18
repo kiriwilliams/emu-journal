@@ -1,6 +1,5 @@
-import React, { useCallback, useEffect, useState } from 'react';
+import React from 'react';
 import { Route, Switch } from "react-router-dom";
-import logo from './logo.svg';
 import PastEntries from "./pages/Past-entries";
 import Login from "./pages/Login";
 import './App.css';

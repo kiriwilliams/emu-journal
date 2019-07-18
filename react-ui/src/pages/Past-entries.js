@@ -3,7 +3,6 @@ import { Redirect } from "react-router-dom";
 import Logout from "../components/Logout/Logout";
 import Footer from "../components/Footer/Footer";
 import Sidebar from "../components/Sidebar/Sidebar";
-import { PromiseProvider } from "mongoose";
 import Entry from "../components/Entry/Entry";
 import API from "../utils/API";
 
