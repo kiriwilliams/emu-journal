@@ -88,20 +88,20 @@ class EntryFooter extends Component {
             switch (element) {
                 case "editing":
                     return { display: "block" }
-                    break;
                 case "edit":
                     return { display: "none" }
-                    break;
+                default: 
+                    return;
             }
         }
         else {
             switch (element) {
                 case "editing":
                     return { display: "none" };
-                    break;
                 case "edit":
                     return { display: "block" };
-                    break;
+                default:
+                    return;
             }
         }
     }
@@ -124,11 +124,11 @@ class EntryFooter extends Component {
                 
                 {/* COLOR PICKER */}
                 <div className="col-2 col-sm-2 text-right"  style={this.setVisibility("editing")}>
-                    <a className="btn btn-small btn-secondary choose_file mr-2 " href="#">
+                    <button  type="button" className="btn btn-small btn-secondary choose_file mr-2 " href="#">
                         <i className="fas fa-paint-brush icon-size "></i>
-                        </a>
-                    <a className="btn btn-small btn-secondary choose_file mr-2 color-picker" href="#">
-                    </a>
+                        </button>
+                    <button type="button" className="btn btn-small btn-secondary choose_file mr-2 color-picker" href="#">
+                    </button>
                 </div>
 
                 {/* IMAGE UPLOADER */}
