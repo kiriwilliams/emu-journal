@@ -33,7 +33,7 @@ class EntryFooter extends Component {
                     cmyk: false,
                     input: false,
                     clear: false,
-                    save: true
+                    save: false
                 }
             }
         });
