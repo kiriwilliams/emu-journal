@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React from "react";
 import LineEntry from "../LineEntry/LineEntry";
 
 export default function MiniHistory(props) {

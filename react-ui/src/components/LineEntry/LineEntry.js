@@ -1,7 +1,6 @@
-import React, { Component } from "react";
+import React from "react";
 import Moment from 'react-moment';
 import { HashLink as Link } from 'react-router-hash-link';
-import API from "../../utils/API";
 
 require('dotenv').config();
 

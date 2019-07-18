@@ -7,10 +7,7 @@ import Blockquote from "../components/Blockquote/Blockquote";
 import Footer from "../components/Footer/Footer";
 import LoginForm from "../components/Login/Login";
 import Register from "../components/Register/Register";
-import Typewriter from "../components/Typewriter/Typewriter";
 import API from "../utils/API";
-import App from "../App";
-
 
 class Login extends Component {
   state = {

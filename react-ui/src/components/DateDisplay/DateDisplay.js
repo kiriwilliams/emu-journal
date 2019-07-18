@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import Moment from 'react-moment';
 
-class DateDisplay extends React.Component {
+class DateDisplay extends Component {
     state = {
         date: ""
     };
