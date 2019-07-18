@@ -131,13 +131,9 @@ class EntryFooter extends Component {
                     </button>
                 </div>
 
-                {/* IMAGE UPLOADER */}
                 <div className="col-10 col-sm-3 text-right" style={this.setVisibility("editing")}>
-                    <div className="btn btn-small btn-secondary choose_file mr-2">
-                        <span> <i className="fas fa-images icon-size"></i></span>
-                        <input type="file" name="fileupload" className="upload-image"></input>
-                    </div>
-
+                    
+             
                     {/* SAVE BUTTON */}
                     <div className="btn btn-small btn-secondary choose_file" onClick={event => this.saveEntry(false)} >
                         <i className="far fa-save icon-size "></i>
@@ -149,7 +145,7 @@ class EntryFooter extends Component {
                 <div className="col-12 text-right pb-3 " style={this.setVisibility("edit")}>
                     <div className="btn btn-small btn-secondary choose_file icon-size" onClick={event => this.editMode(true)}><i className="fas fa-user-edit icon-size"></i></div>
                  {/* DELETE BUTTON */}
-                    <div className="btn btn-small btn-secondary choose_file icon-size ml-2" onClick={() => this.props.delete()}><i class="far fa-trash-alt icon-size"></i></div>
+                    <div className="btn btn-small btn-secondary choose_file icon-size ml-2" onClick={() => this.props.delete()}><i className="far fa-trash-alt icon-size"></i></div>
             
                 </div>
                
