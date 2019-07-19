@@ -67,4 +67,4 @@ The Past Entries page gives a full summary of all posts and their content. From 
     - Jennifer Ginelli
 
 ## Acknowledgments
-   * This code is forked from [heroku-cra-node](https://github.com/mars/heroku-cra-node) to deploy to heroku.
+   * Boilerplate code is forked from [heroku-cra-node](https://github.com/mars/heroku-cra-node) to deploy to heroku.
